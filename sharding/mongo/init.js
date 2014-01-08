@@ -1,0 +1,5 @@
+sh.addShard("localhost:40000")
+sh.addShard("localhost:40001")
+sh.status()
+sh.enableSharding("testsharddb")
+sh.shardCollection("testsharddb.testshardcoll", {_id:1})
